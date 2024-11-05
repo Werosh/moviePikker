@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovYPikker</title>
+    <link rel="icon" type="image/jpg" href="imgs/logo.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="Js/script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav_bar">
+        <div class="logo_area center_obj">
+          <div class="loading-overlay">
+              <div class="spinner"></div>
+          </div>
+          <img src="imgs/logo_body.png" alt="Logo" onload="this.parentNode.querySelector('.loading-overlay').style.display='none';">
+      </div>
+      
+
+        <div class="nav_buttons_area center_obj">
+          <ul>
+            <li>Home</li>
+            <li>Browse</li>
+            <li>Trending</li>
+            <li>Request</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slider_bar">
+        <div class="left_arrow center_obj">
+          <h1><i class="bx bx-chevron-left"></i></h1>
+        </div>
+
+        <div class="slider_area center_obj">
+          <div class="slider_images">
+            <img
+              style="background-color: blueviolet"
+              src="imgs/movies_Imgs/1.jpeg"
+              alt="img1"
+            />
+            <img
+              style="background-color: rgb(234, 238, 13)"
+              src="imgs/movies_Imgs/2.jpg"
+              alt="img2"
+            />
+            <img
+              style="background-color: rgb(10, 6, 253)"
+              src="imgs/movies_Imgs/3.jpg"
+              alt="img3"
+            />
+            <img
+              style="background-color: rgb(250, 0, 75)"
+              src="imgs/movies_Imgs/4.jpg"
+              alt="img4"
+            />
+            <img
+              style="background-color: rgb(17, 163, 248)"
+              src="imgs/movies_Imgs/5.jpg"
+              alt="img5"
+            />
+            <img
+              style="background-color: rgb(10, 148, 51)"
+              src="imgs/movies_Imgs/6.jpg"
+              alt="img6"
+            />
+            <img
+              style="background-color: rgb(0, 0, 0)"
+              src="imgs/movies_Imgs/7.jpg"
+              alt="img7"
+            />
+            <img
+              style="background-color: rgb(255, 255, 255)"
+              src="imgs/movies_Imgs/8.jpg"
+              alt="img8"
+            />
+            <img
+              style="background-color: rgb(255, 0, 221)"
+              src="imgs/movies_Imgs/9.jpg"
+              alt="img9"
+            />
+            <img
+              style="background-color: rgb(255, 0, 221)"
+              src="imgs/movies_Imgs/10.jpg"
+              alt="img10"
+            />
+          </div>
+        </div>
+
+        <div class="right_arrow center_obj">
+          <h1><i class="bx bx-chevron-right"></i></h1>
+        </div>
+      </div>
+
+      <div class="area_2">
+        <div class="area_2_title"><h1>Latest Movies</h1></div>
+
+        <div class="showcase_area">
+          <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/1.jpg" alt="Film 1" />
+              <div class="movie_name">
+                <h3>IMDb 8/10 <i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/2.jpg" alt="Film 2" />
+              <div class="movie_name">
+                <h3>IMDb 9/10 <i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/3.jpg" alt="Film 3" />
+              <div class="movie_name">
+                <h3>IMDb 6/15 <i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/4.jpg" alt="Film 4" />
+              <div class="movie_name">
+                <h3>IMDb 5/10 <i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/5.jpg" alt="Film 5" />
+              <div class="movie_name">
+                <h3>IMDb 6/10 <i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/6.jpg" alt="Film 6" />
+              <div class="movie_name">
+                <h3>IMDb 5.5/10 <i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="showcase">
+            <div class="movie_img">
+              <img src="imgs/movy_showcase_imgs/7.jpg" alt="Film 7" />
+              <div class="movie_name">
+                <h3>IMDb 4/10<i class="bx bxs-star"></i></h3>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <hr class="firstpage_hr" />
+
+      <div class="area_3">
+        <div class="selector_area">
+          <div class="drop1">
+            <!-- <form action="post"> -->
+            <div class="dropdown">
+              <label for="genre">Genre:</label>
+              <select id="genre" name="genre">
+                <option value="">Select Genre</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="animation">Animation</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="drop2">
+            <div class="dropdown">
+              <label for="language">Language:</label>
+              <select id="language" name="language">
+                <option value="">Select Language</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="chinese">Chinese</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+                <option value="hindi">Hindi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="drop3">
+            <div class="dropdown">
+              <label for="year">Year:</label>
+              <select id="year" name="year">
+                <option value="">Select Year</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- </form> -->
+        </div>
+
+        <div class="search_area">
+          <div class="textBox">
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="s_btn">Search</div>
+        </div>
+
+        <div class="description_area">
+          <div class="img_area">
+            <div class="img_src">
+              <img src="imgs/movies_Imgs/7.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="detail_area">
+            <div class="d_brief">
+              <div class="imdb_box">
+                <h4><i class="bx bxs-star" style="font-size: 3rem"></i></h4>
+                <h4>7.4/10</h4>
+              </div>
+
+              <div class="details">
+                <h3>~ Movie Title ~</h3>
+                <ul class="movie-details">
+                  <li><strong>Title:</strong> Movie Title Here</li>
+                  <li><strong>Director:</strong> Director Name Here</li>
+                  <li><strong>Author:</strong> Author Name Here</li>
+                  <li><strong>Release Year:</strong> Year Here</li>
+                  <li><strong>Genre:</strong> Genre Here</li>
+                  <li>
+                    <strong>Duration:</strong> Duration Here (e.g., 120 min)
+                  </li>
+                  <li><strong>Rating:</strong> Rating Here (e.g., 8.5/10)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="down_btns">
+              <div class="p480 d_box">
+                <h4>
+                  <a href="path/to/film_480p.mp4" download
+                    >Low Quality - 480p (500 MB)</a
+                  >
+                </h4>
+              </div>
+
+              <div class="p720 d_box">
+                <h4>
+                  <a href="path/to/film_720p.mp4" download
+                    >Medium Quality - 720p (1.5 GB)</a
+                  >
+                </h4>
+              </div>
+
+              <div class="p1080 d_box">
+                <h4>
+                  <a href="path/to/film_1080p.mp4" download
+                    >High Quality - 1080p (2.5 GB)</a
+                  >
+                </h4>
+              </div>
+
+              <div class="p4k d_box">
+                <h4>
+                  <a href="path/to/film_4k.mp4" download
+                    >Ultra Quality - 4K (10 GB)</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
